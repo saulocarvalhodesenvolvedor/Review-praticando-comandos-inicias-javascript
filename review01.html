@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review das aulas anteriores</title>
+
+     <style>
+
+           body{
+                
+                 background-color: yellow;
+                 color: black;
+                 font: normal 20 pt arial;
+
+               }
+
+               p{
+                 color: red;
+                 font: normal 12 pt arial;
+
+               }
+
+     </style>
+
+
+</head>
+
+<body>
+
+<h1>Revisão de javascript das primeiras aulas: </h1>
+
+<p>Iremos revisar como fazer script de forma básica em javascript usando alert,prompt e confirm que são comando inicias apresentados;</p>    
+<p>Como declarar variaveis e tratar dados por meio dos comandos de 'prompt' e 'alert';</p>
+<p>Iremos rever como converter string para números pelo comando 'number.parseInt(n)' e 'number.parseFloat(n)' ou usar apenas 'number(n)';</p>
+<!-- É importante destacar que o sinal de adição(+) ele serve para concatenação(juntar) e para somar, logo usando conversão de string
+para números é necessário,pois o javascript(Js) não consegue indentificar se é concatenação ou somar, tanto que nas suas configurações 
+inicias ele ja está como em concatenação.-->
+
+
+
+<script>
+
+window.alert('Revisando Js') /* Além de usar está forma, posso usar também este comando apenas removendo 'window', como irei colocar abaixo. */
+window.confirm('escolha dois números e veja a soma deles')
+var n1 = Number(window.prompt('digite um número: '))/* Para números flutuantes usaria: Number.parseFloat() */
+var n2 = Number(window.prompt('digite outro número: '))/* posso usar também este comando 'Number()' que serve para números 
+inteiros e flutuantes sem precisar específicar.*/
+/* Logo ficaria dessa forma: var n1 = Number(window.prompt('digite um número')) */
+var s = n1 + n2
+alert(`A soma dos valores é ${s}`)
+
+
+
+</script>
+
+</body>
+
+</html>
